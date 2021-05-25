@@ -1,0 +1,13 @@
+﻿using Core.Entities.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Core.Utilities.Security.JWT
+{
+    public interface ITokenHelper
+    {
+        //  Apide bu operasyonumuz çalışacak
+        AccessToken CreateToken(User user, List<OperationClaim> operationClaims);
+    }
+}
